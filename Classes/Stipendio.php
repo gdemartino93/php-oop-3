@@ -1,9 +1,9 @@
 <?php
 
 class Stipendio {
-    public $mensile;
-    public $tredicesima;
-    public $quattordicesima;
+    private $mensile;
+    private $tredicesima;
+    private $quattordicesima;
 
     public function __construct($mensile,$tredicesima,$quattordicesima)
     {

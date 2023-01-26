@@ -1,11 +1,11 @@
 <?php
 
 class Persona{
-    public $nome;
-    public $cognome;
-    public $dataDiNascita;
-    public $cittaDiNascita;
-    public $cf;
+    private $nome;
+    private $cognome;
+    private $dataDiNascita;
+    private $cittaDiNascita;
+    private $cf;
 
     public function __construct($nome,$cognome,$dataDiNascita,$cittaDiNascita,$cf)
     {
