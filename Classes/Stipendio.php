@@ -1,16 +1,15 @@
 <?php
-include_once __DIR__ ."/Impiegato.php";
-class Stipendio extends Impiegato{
+
+class Stipendio {
     public $mensile;
     public $tredicesima;
     public $quattordicesima;
 
-    public function __construct($nome,$cognome,$dataDiNascita,$cittaDiNascita,$cf,$dataAssunzione,$mensile,$tredicesima,$quattordicesima)
+    public function __construct($mensile,$tredicesima,$quattordicesima)
     {
         $this -> mensile = $mensile;
         $this -> tredicesima = $tredicesima;
         $this -> quattordicesima = $quattordicesima;
-        parent :: __construct($nome,$cognome,$dataDiNascita,$cittaDiNascita,$cf,$dataAssunzione,$mensile,$tredicesima,$quattordicesima);
     }
     public function setMensile($mensile){
         $this-> mensile = $mensile;

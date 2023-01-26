@@ -7,7 +7,7 @@ class Persona{
     public $cittaDiNascita;
     public $cf;
 
-    public function __construct($nome,$cognome,$dataDiNascita,$cittaDiNascita,$cf,$mensile)
+    public function __construct($nome,$cognome,$dataDiNascita,$cittaDiNascita,$cf)
     {
         $this -> nome = $nome;
         $this -> cognome = $cognome;
