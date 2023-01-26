@@ -17,10 +17,21 @@ class Impiegato extends Persona{
         return $this-> dataAssunzione;
     }
     public function getStipendioMensile(){
-        return $this-> stipendio -> getMensile();
+        if ($this->stipendio ->getMensile()){
+            return $this-> stipendio -> getMensile();
+        } else return "tirocinio";
     }
     public function getStipendioAnnuale(){
-        return $this-> stipendio -> getMensile() * 12;
+        if (($this->stipendio-> getTredicesima()) && ( $this->stipendio -> getQuattordicesima())){
+            return $this-> stipendio -> getMensile() * 12 + $this->stipendio ->getTredicesima() + $this->stipendio->getQuattordicesima();
+        }
+        elseif ( $this->stipendio ->getTredicesima()){
+            return $this-> stipendio -> getMensile() * 12 + $this->stipendio ->getTredicesima();
+        }
+        elseif ( $this->stipendio ->getQuattordicesima()){
+            return $this-> stipendio -> getMensile() * 12 + $this->stipendio ->getQuattordicesima();
+        }else return $this->stipendio -> getMensile();
+        
     }
 }
 

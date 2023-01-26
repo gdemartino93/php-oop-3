@@ -13,10 +13,10 @@
         include_once __DIR__ ."/Classes/Impiegato.php";
         include_once __DIR__ ."/Classes/Capo.php";
         $impiegati = [
-            new Impiegato("gianluca","demartino","12/07/1993","Barletta","cfgianluca","12/07/2022",new Stipendio(1000,1000,1000)),
-            new Impiegato("marco","rossi","14/02/1987","Roma","cfmarco","14/02/2014",new Stipendio(1000,null,null)),
-            new Impiegato("paolo","bianchi","02/01/1989","Ancona","cfpaolo","22/11/2005",new Stipendio(1000,null,null)),
-            new Impiegato("laura","gialli","22/11/1991","Milano","cflaura","23/12/2021",new Stipendio(1000,1000,100)),
+            new Impiegato("gianluca","demartino","12/07/1993","Barletta","cfgianluca","12/07/2022",new Stipendio(5000,1000,1000)),
+            new Impiegato("marco","rossi","14/02/1987","Roma","cfmarco","14/02/2014",new Stipendio(4000,null,null)),
+            new Impiegato("paolo","bianchi","02/01/1989","Ancona","cfpaolo","22/11/2005",new Stipendio(3000,null,null)),
+            new Impiegato("laura","gialli","22/11/1991","Milano","cflaura","23/12/2021",new Stipendio(null,null,null)),
         ];
         $capi = [
             new Capo("Marco","Capo","12/01/1960","Roma","cfsasdasdasd", 500,2000),
