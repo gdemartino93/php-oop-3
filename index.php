@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <?php
+    // includiamo i vari file delle classi
         include_once __DIR__ ."/Classes/Persona.php";
         include_once __DIR__ ."/Classes/Stipendio.php";
         include_once __DIR__ ."/Classes/Impiegato.php";
@@ -40,6 +41,7 @@
     </tr>
   </thead>
   <tbody>
+    <!-- iteriamo l'array impiegati e andiamo a riempire la tabella creata con bootstrap -->
   <?php foreach($impiegati as $impiegato){?>
     <tr>
       <th scope="row">1</th>
@@ -73,6 +75,7 @@
     </tr>
   </thead>
 <tbody>
+      <!-- iteriamo l'array capi e andiamo a riempire la tabella creata con bootstrap -->
   <?php foreach($capi as $capo){?>
     <tr>
       <th scope="row">1</th>

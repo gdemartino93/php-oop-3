@@ -18,9 +18,13 @@ class Impiegato extends Persona{
     }
     public function getStipendioMensile(){
         if ($this->stipendio ->getMensile()){
+            // aggiungiamo il char Euro qui e non nell'html in caso dovesse essere vuoto il campo stipendio
             return $this-> stipendio -> getMensile() . " €";
+            // se il campo è vuoto al posto dello stipendio in euro verrà inserito coem tirocinio
         } else return "tirocinio";
     }
+
+    // funzione per generare stipendio annuale e in caso di tredicesima e quattordicesima aggiungerli allo stipendio annuale
     public function getStipendioAnnuale(){
         if (($this->stipendio-> getTredicesima()) && ( $this->stipendio -> getQuattordicesima())){
             return $this-> stipendio -> getMensile() * 12 + $this->stipendio ->getTredicesima() + $this->stipendio->getQuattordicesima();
