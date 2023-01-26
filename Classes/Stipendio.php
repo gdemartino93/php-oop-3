@@ -30,10 +30,10 @@ class Stipendio {
         return $this-> quattordicesima;
     }
 
-    // public function getStipendioAnnuale($mensile,$tredicesima,$quattordicesima){
-    //     $stipendioAnnuale = ($mensile * 12) + $tredicesima + $quattordicesima;
-    //     return $stipendioAnnuale;
-    // }
+    public function getStipendioAnnuale(){
+        $stipendioAnnuale = ($this->getMensile() * 12) + $this->getTredicesima() + $this->getQuattordicesima();
+        return $stipendioAnnuale;
+    }
 
 }
 
