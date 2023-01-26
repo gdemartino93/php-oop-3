@@ -9,12 +9,12 @@
 
     <?php
         include_once __DIR__ ."/Classes/Persona.php";
-        // include_once __DIR__ ."/Classes/Stipendio.php";
+        include_once __DIR__ ."/Classes/Stipendio.php";
         include_once __DIR__ ."/Classes/Impiegato.php";
         $persone = [
-            new Persona("gianluca","demartino","12/07/1993","Barletta","cfgianluca"),
-            new Persona("Marco","rossi","02/10/1999","Roma","cfmarcorossi"),
-            new Persona("Paolo","Bianchi","22/11/1999","Milano","cfpaolobianchi"),
+            new Persona("gianluca","demartino","12/07/1993","Barletta","cfgianluca",1000),
+            new Stipendio("Marco","rossi","02/10/1999","Roma","cfmarcorossi","12/01/1221",1200,null,null),
+            new Persona("Paolo","Bianchi","22/11/1999","Milano","cfpaolobianchi", $mensile),
         ];
 
     ?>
@@ -29,6 +29,7 @@
       <th scope="col">Città di nascita</th>
       <th scope="col">Data di nascita</th>
       <th scope="col">Codice Fiscale</th>
+      <th scope="col">Stipendio</th>
     </tr>
   </thead>
   <tbody>
@@ -40,6 +41,7 @@
       <td><?php echo $persona -> getCittaDiNascita() ?></td>
       <td><?php echo $persona -> getDataDiNascita() ?></td>
       <td><?php echo $persona -> getCf() ?></td>
+      <td><?php var_dump($persona) ?></td>
     </tr>
     
 <?php }
