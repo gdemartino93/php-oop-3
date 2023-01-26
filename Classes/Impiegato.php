@@ -18,7 +18,7 @@ class Impiegato extends Persona{
     }
     public function getStipendioMensile(){
         if ($this->stipendio ->getMensile()){
-            return $this-> stipendio -> getMensile();
+            return $this-> stipendio -> getMensile() . " €";
         } else return "tirocinio";
     }
     public function getStipendioAnnuale(){
@@ -30,7 +30,9 @@ class Impiegato extends Persona{
         }
         elseif ( $this->stipendio ->getQuattordicesima()){
             return $this-> stipendio -> getMensile() * 12 + $this->stipendio ->getQuattordicesima();
-        }else return $this->stipendio -> getMensile();
+        }elseif ($this-> stipendio ->getMensile() == null){
+            return "no stipendio";
+        } else return $this->stipendio -> getMensile() . " €";
         
     }
 }

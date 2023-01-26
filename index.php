@@ -49,7 +49,7 @@
       <td><?php echo $impiegato -> getDataDiNascita() ?></td>
       <td><?php echo $impiegato -> getCf() ?></td>
       <td><?php echo $impiegato -> getStipendioMensile()  ?></td>
-      <td><?php echo $impiegato -> getStipendioAnnuale()  ?> &euro;</td>
+      <td><?php echo $impiegato -> getStipendioAnnuale()  ?> </td>
 
     </tr>
     

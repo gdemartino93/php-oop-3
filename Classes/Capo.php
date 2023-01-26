@@ -12,16 +12,16 @@ class Capo extends Persona{
         $this-> dividendo = $dividendo;
     }
     public function getDividendo(){
-        return $this->dividendo;
+        return $this->dividendo . " €";
     }
     public function setBonus($bonus){
         $this-> $bonus = $bonus;
     }
     public function getBonus(){
-        return $this-> bonus;
+        return $this-> bonus . " €";
     }
     public function getRedditoAnnuale(){
-        return $this-> getDividendo() * 12 + $this -> getBonus();
+        return $this-> getDividendo() * 12 + $this -> getBonus() . " €";
     }
 }
 
