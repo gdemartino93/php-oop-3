@@ -29,10 +29,10 @@ class Stipendio extends Impiegato{
     public function geQuattordicesima(){
         return $this-> quattordicesima;
     }
-    public function getStipendioAnnuale($mensile,$tredicesima,$quattordicesima){
-        $stipendioAnnuale = ($mensile * 12) + $tredicesima + $quattordicesima;
-        return $stipendioAnnuale;
-    }
+    // public function getStipendioAnnuale($mensile,$tredicesima,$quattordicesima){
+    //     $stipendioAnnuale = ($mensile * 12) + $tredicesima + $quattordicesima;
+    //     return $stipendioAnnuale;
+    // }
 
 }
 

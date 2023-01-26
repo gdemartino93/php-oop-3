@@ -9,6 +9,8 @@
 
     <?php
         include_once __DIR__ ."/Classes/Persona.php";
+        // include_once __DIR__ ."/Classes/Stipendio.php";
+        include_once __DIR__ ."/Classes/Impiegato.php";
         $persone = [
             new Persona("gianluca","demartino","12/07/1993","Barletta","cfgianluca"),
             new Persona("Marco","rossi","02/10/1999","Roma","cfmarcorossi"),
