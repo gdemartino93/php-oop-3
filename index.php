@@ -33,11 +33,11 @@
   <?php foreach($persone as $persona){?>
     <tr>
       <th scope="row">1</th>
-      <td><?php echo $persona -> nome ?></td>
-      <td><?php echo $persona -> cognome ?></td>
-      <td><?php echo $persona -> cittaDiNascita ?></td>
-      <td><?php echo $persona -> dataDiNascita ?></td>
-      <td><?php echo $persona -> cf ?></td>
+      <td><?php echo $persona -> getNome() ?></td>
+      <td><?php echo $persona -> getCognome() ?></td>
+      <td><?php echo $persona -> getCittaDiNascita() ?></td>
+      <td><?php echo $persona -> getDataDiNascita() ?></td>
+      <td><?php echo $persona -> getCf() ?></td>
     </tr>
     
 <?php }
