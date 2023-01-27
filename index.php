@@ -86,7 +86,7 @@
       <td><?php echo $capo -> getCf() ?></td>
       <td><?php echo $capo -> getDividendo() ?></td>
       <td><?php echo $capo -> getBonus() ?></td>
-      <td><?php echo $capo -> getRedditoAnnuale() ?></td>
+      <td><?php echo $capo -> getStipendioAnnuale() ?></td>
 
 
     </tr>

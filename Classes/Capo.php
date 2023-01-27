@@ -20,7 +20,7 @@ class Capo extends Persona{
     public function getBonus(){
         return $this-> bonus . " €";
     }
-    public function getRedditoAnnuale(){
+    public function getStipendioAnnuale(){
         return $this-> getDividendo() * 12 + $this -> getBonus() . " €";
     }
 }
